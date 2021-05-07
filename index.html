@@ -102,7 +102,7 @@
            <!-- items end -->
            
         </div>
-        <div class="col-md-6 col-12 about-content p-m-5 p-5 ">
+        <div class="col-md-6 col-12 about-content p-m-5 p-5 text-white ">
             <h2>JITHIN</h2>
             <h3>Python Developer</h3>
             <h3>IOT developer</h3>
@@ -196,7 +196,7 @@
       <div class="row m-auto p-5 align-items-center justify-content-center text-center" style="background:rgb(80, 0, 0);color: #fff;">
         <h2 class="mb-4" id="#contact">CONTACT</h2>
         <div class="col-md-4 col-12 text-start ">
-            <form>
+            <form id="submit-form">
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
                   <label for="inputName">Name</label>
@@ -262,6 +262,14 @@
     document.getElementById("phonenum").style.borderWidth = "thick";
     document.getElementById("phonenum").style.borderColor = "green";
     phone="check";
+        }
+        else if(num.length>10){
+          phnum.innerHTML="enter 10 digit number";
+          document.getElementById("phonepara").style.color = "red";
+        document.getElementById("phonenum").style.borderColor = "red";
+        document.getElementById("phonenum").style.borderWidth = "thick";
+
+
         }
       else
         {
