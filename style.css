@@ -127,4 +127,28 @@ btn.btn{
     background: #007bb5;
     color: white;
   }
-  
+  .skills{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  @media(max-width:767px){
+      .about-content{
+        border-top: 3px solid white;
+        
+        
+      }
+  }
+  @media (min-width:768px) {
+      .about-content{
+    border-left: 3px solid white;
+      }
+  }
+  .about-content{
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+   
+    color: #ffff;
+  }
+
